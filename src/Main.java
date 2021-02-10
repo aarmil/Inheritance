@@ -2,14 +2,19 @@ import cat.Cat;
 import cat.Lion;
 import box.Box;
 import box.BoxWeight;
+import figures.Figure;
+import figures.Rect;
+import figures.Triangle;
 
 public class Main {
     public static void main(String[] args) {
-        Box box = new Box(10, 15, 20);
-        box.showInfo();
+        Rect rect = new Rect(3,2);
+        double a = rect.area();
+        System.out.println(a);
 
-        BoxWeight box2 = new BoxWeight(box, 20);
-        box2.showInfo();
+        Triangle tr = new Triangle(3,2,4);
+        double b = tr.area();
+        System.out.println(b);
 
     }
 }
